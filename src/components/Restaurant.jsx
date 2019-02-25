@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
 import RestaurantControls from './RestaurantControls.jsx';
 import RestaurantMenu from './RestaurantMenu.jsx';
 

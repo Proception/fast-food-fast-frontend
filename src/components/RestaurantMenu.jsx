@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
-import yam from './../assets/images/yam.jpg';
-import rice from './../assets/images/rice.jpg';
-import fufu from './../assets/images/fufu.jpg';
-import beans from './../assets/images/beans.jpg';
+import yam from '../assets/images/yam.jpg';
+import rice from '../assets/images/rice.jpg';
+import fufu from '../assets/images/fufu.jpg';
+import beans from '../assets/images/beans.jpg';
 
 export default class RestaurantMenu extends Component {
   render() {
     return (
       <section className="order">
         <div className="container">
-          <div className="header">
+        <div className="header">
             <h3>Core Dishes</h3>
             <div className="pagination">
               <a href="#" >&laquo;</a>
