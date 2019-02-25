@@ -1,7 +1,7 @@
 import { ADD_DATA, REMOVE_DATA } from '../constants/action-types'
 
 const initialState = {
-    data: [{id: 1, title: "test link"}]
+    data: []
 };
 
 function rootReducer (state = initialState, action){

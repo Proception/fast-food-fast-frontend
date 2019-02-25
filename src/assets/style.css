@@ -47,7 +47,7 @@ a{
  	overflow: hidden;
  	display: block;
  	position: relative;
-	/* padding-bottom: 500px; */
+	padding-bottom: 500px;
 	}
 
 .container {
@@ -243,7 +243,7 @@ header a:hover{
 /* Showcase */
 #showcase {
 	min-height: 600px;
-	background: url('./images/banner3.jpg') no-repeat 0;
+	background: url('../images/banner3.jpg') no-repeat 0;
 	text-align: center;
 	color: #ffffff;
 	background-repeat:no-repeat;

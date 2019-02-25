@@ -4,9 +4,9 @@ import { NavLink } from 'react-router-dom';
 export default class Footer extends Component {
   render() {
     return (
-      <div>
-        <footer>Copyright 2019</footer>
-      </div>
+    <footer>
+        <p>Fast Food Fast Copyright &copy; 2018</p>
+    </footer>
     )
   }
 }
