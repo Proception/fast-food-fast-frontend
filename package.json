@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --u --coverage --colors",
+    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls",
     "test:watch": "jest --watch",
     "start:dev": "webpack-dev-server --mode development ./src/index.js --config ./webpack.config.js --output ./dist/bundle.js --open",
     "build": "webpack --mode production ./src/app/index.js --output ./dist/bundle.js"
@@ -32,6 +33,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "coveralls": "^3.0.3",
     "css-loader": "^2.1.0",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.9.1",
