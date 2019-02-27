@@ -8,7 +8,7 @@ export default class App extends Component {
   render() {
     return (
       <Router>
-        <div class="main-container">
+        <div className="main-container">
           <NavMenu/>
           <Routes/>
           <Footer/>

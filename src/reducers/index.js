@@ -1,7 +1,10 @@
 import { ADD_DATA, REMOVE_DATA } from '../constants/action-types'
 
 const initialState = {
-    data: []
+    data: [],
+    auth: {
+        isAuthenticated: false,
+    }
 };
 
 function rootReducer (state = initialState, action){
