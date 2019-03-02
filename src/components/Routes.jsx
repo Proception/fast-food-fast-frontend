@@ -1,6 +1,7 @@
 import React from "react";
 import Home from "./Home.jsx";
 import Login from "./Login.jsx";
+import Logout from "./Logout.jsx";
 import NotFound from "./NotFound.jsx"
 import Restaurant from "./Restaurant.jsx";
 import Signup from './Signup.jsx';
@@ -15,6 +16,7 @@ const Routes = () => (
     <Switch>
         <Route exact path="/" component={Home}></Route>
         <Route path="/login" component={Login}></Route>
+        <Route path="/logout" component={Logout}></Route>
         <Route path="/signup" component={Signup}></Route>
         <Route path="/menu" component={Restaurant}></Route>
         <Route path="/addfooditems" component={AddFoodItems}></Route>

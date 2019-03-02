@@ -1,3 +1,69 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AddFoodItems Component should match snapshot 1`] = `ShallowWrapper {}`;
+exports[`AddFoodItems Component should match snapshot 1`] = `
+<section>
+  <div
+    class="container"
+  >
+    <div
+      id="wrapper"
+    >
+      <h1>
+        Enter Food Item details
+      </h1>
+      <div
+        class="register"
+      >
+        <p>
+          <input
+            class="reg-control"
+            name=""
+            placeholder="Food Name"
+            type="text"
+          />
+        </p>
+        <p>
+          <input
+            class="reg-control"
+            name=""
+            placeholder="price"
+            type="number"
+          />
+        </p>
+        <p>
+          <input
+            class="reg-control"
+            name=""
+            placeholder="Quantity/portions Available"
+            type="number"
+          />
+        </p>
+        <p>
+          <textarea
+            cols="42"
+            name=""
+            placeholder="Description"
+            rows="5"
+          />
+        </p>
+        <p>
+          <input
+            accept="image/*"
+            class="reg-control"
+            name="pic"
+            type="file"
+          />
+        </p>
+        <p>
+          <input
+            class="button"
+            name=""
+            type="button"
+            value="Submit"
+          />
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+`;

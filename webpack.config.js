@@ -1,14 +1,13 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
+  entry: ['babel-polyfill', './src/index.js'],
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
-        }
+        use: ['babel-loader']
       },
       {
         test: /\.html$/,
@@ -39,6 +38,11 @@ module.exports = {
         ],
       },
     ]
+  },
+  devServer: {
+    contentBase: './src',
+    historyApiFallback: true,
+    port: 8080,
   },
   resolve: {
     extensions: ['*', '.js', '.jsx'],

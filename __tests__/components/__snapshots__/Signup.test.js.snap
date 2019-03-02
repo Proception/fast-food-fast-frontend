@@ -1,3 +1,195 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Signup Component should match snapshot 1`] = `ShallowWrapper {}`;
+exports[`Signup Component should match snapshot 1`] = `
+<section>
+  <div
+    class="container"
+  >
+    <div
+      id="wrapper"
+    >
+      <h1>
+        Enter Registration Details
+      </h1>
+      <div
+        class="register"
+      >
+        <div
+          id="notif"
+        />
+        <form
+          id="signupForm"
+          noValidate={true}
+          onSubmit={[Function]}
+        >
+          <p>
+            <Input
+              handleChange={[Function]}
+              myClass="reg-control"
+              name="email"
+              placeholder="Email"
+              type="email"
+              value=""
+            />
+          </p>
+          <p>
+            <Input
+              handleChange={[Function]}
+              myClass="reg-control"
+              name="name"
+              placeholder="Full Name"
+              type="text"
+              value=""
+            />
+          </p>
+          <p>
+            <Input
+              handleChange={[Function]}
+              myClass="reg-control"
+              name="pnumber"
+              placeholder="Phone number"
+              type="number"
+              value=""
+            />
+          </p>
+          <p>
+            <Input
+              handleChange={[Function]}
+              myClass="reg-control"
+              name="password"
+              placeholder="Password"
+              type="password"
+              value=""
+            />
+          </p>
+          <p>
+            <Input
+              handleChange={[Function]}
+              myClass="reg-control"
+              name="cpassword"
+              placeholder="Confirm Password"
+              type="password"
+              value=""
+            />
+          </p>
+          <p>
+            <Input
+              disabled={false}
+              myClass="button"
+              type="submit"
+              value="submit"
+            />
+          </p>
+          <h5>
+            Already have an account click 
+            <NavLink
+              activeClassName="active"
+              aria-current="page"
+              to="/login"
+            >
+              here
+            </NavLink>
+          </h5>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Signup Component should render signup with isLoading true 1`] = `
+<section>
+  <div
+    class="container"
+  >
+    <div
+      id="wrapper"
+    >
+      <h1>
+        Enter Registration Details
+      </h1>
+      <div
+        class="register"
+      >
+        <div
+          id="notif"
+        />
+        <form
+          id="signupForm"
+          noValidate={true}
+          onSubmit={[Function]}
+        >
+          <p>
+            <Input
+              handleChange={[Function]}
+              myClass="reg-control"
+              name="email"
+              placeholder="Email"
+              type="email"
+              value=""
+            />
+          </p>
+          <p>
+            <Input
+              handleChange={[Function]}
+              myClass="reg-control"
+              name="name"
+              placeholder="Full Name"
+              type="text"
+              value=""
+            />
+          </p>
+          <p>
+            <Input
+              handleChange={[Function]}
+              myClass="reg-control"
+              name="pnumber"
+              placeholder="Phone number"
+              type="number"
+              value=""
+            />
+          </p>
+          <p>
+            <Input
+              handleChange={[Function]}
+              myClass="reg-control"
+              name="password"
+              placeholder="Password"
+              type="password"
+              value=""
+            />
+          </p>
+          <p>
+            <Input
+              handleChange={[Function]}
+              myClass="reg-control"
+              name="cpassword"
+              placeholder="Confirm Password"
+              type="password"
+              value=""
+            />
+          </p>
+          <p>
+            <Input
+              disabled={true}
+              myClass="button"
+              type="submit"
+              value="Processing"
+            />
+          </p>
+          <h5>
+            Already have an account click 
+            <NavLink
+              activeClassName="active"
+              aria-current="page"
+              to="/login"
+            >
+              here
+            </NavLink>
+          </h5>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+`;

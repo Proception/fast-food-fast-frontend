@@ -1,3 +1,46 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Routes Component should match snapshot 1`] = `ShallowWrapper {}`;
+exports[`Routes Component should match snapshot 1`] = `
+<Switch>
+  <Route
+    component={[Function]}
+    exact={true}
+    path="/"
+  />
+  <Route
+    component={[Function]}
+    path="/login"
+  />
+  <Route
+    component={[Function]}
+    path="/logout"
+  />
+  <Route
+    component={[Function]}
+    path="/signup"
+  />
+  <Route
+    component={[Function]}
+    path="/menu"
+  />
+  <Route
+    component={[Function]}
+    path="/addfooditems"
+  />
+  <Route
+    component={[Function]}
+    path="/checkout"
+  />
+  <Route
+    component={[Function]}
+    path="/orders"
+  />
+  <Route
+    component={[Function]}
+    path="/orderhistory"
+  />
+  <Route
+    component={[Function]}
+  />
+</Switch>
+`;

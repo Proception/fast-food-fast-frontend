@@ -1,3 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home Component should match snapshot 1`] = `ShallowWrapper {}`;
+exports[`Home Component should match snapshot 1`] = `
+<section
+  id="showcase"
+>
+  <div
+    className="container"
+  >
+    <h1>
+      Affordable meals, delivered very fast to your doorstep
+    </h1>
+    <a
+      href="restaurantmenu.html"
+    >
+      <button
+        className="button_1"
+        type="button"
+      >
+        Food Menu
+      </button>
+    </a>
+  </div>
+</section>
+`;

@@ -1,3 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Footer Component should match snapshot 1`] = `ShallowWrapper {}`;
+exports[`Footer Component should match snapshot 1`] = `
+<footer>
+  <p>
+    Fast Food Fast Copyright © 2018
+  </p>
+</footer>
+`;

@@ -1,5 +1,209 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NavMenu Component should return guest menu 1`] = `ShallowWrapper {}`;
+exports[`NavMenu Component should return auth menu 1`] = `
+<header>
+  <div
+    className="container"
+  >
+    <NavLink
+      activeClassName="active"
+      aria-current="page"
+      to="/"
+    >
+      <div
+        id="brand-logo"
+      >
+        <h1>
+           
+          <span
+            className=""
+          >
+            Fast
+          </span>
+           Food Fast
+        </h1>
+      </div>
+    </NavLink>
+    <nav>
+      <ul
+        className="nav"
+      >
+        <li>
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            to="/"
+          >
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            to="/menu"
+          >
+            Menu
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            to="/checkout"
+          >
+            Checkout
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            to="/logout"
+          >
+            Logout
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            to="#"
+          >
+            Settings
+          </NavLink>
+          <ul
+            className="dropdown"
+          >
+            <li>
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                to="/orders"
+              >
+                View Pending Orders
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                to="/orderhistory"
+              >
+                View Order History
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                to="/search"
+              >
+                Search Food Items
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                to="/addfooditems"
+              >
+                Add Food Items
+              </NavLink>
+            </li>
+          </ul>
+        </li>
+        <li
+          class="on-login user"
+        >
+          <a>
+            <span>
+              Hi, 
+              User
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+`;
 
-exports[`NavMenu Component should return guest menu 2`] = `ShallowWrapper {}`;
+exports[`NavMenu Component should return guest menu 1`] = `
+<header>
+  <div
+    className="container"
+  >
+    <NavLink
+      activeClassName="active"
+      aria-current="page"
+      to="/"
+    >
+      <div
+        id="brand-logo"
+      >
+        <h1>
+           
+          <span
+            className=""
+          >
+            Fast
+          </span>
+           Food Fast
+        </h1>
+      </div>
+    </NavLink>
+    <nav>
+      <ul
+        className="nav"
+      >
+        <li>
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            to="/"
+          >
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            to="/menu"
+          >
+            Menu
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            to="/login"
+          >
+            Login
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            to="/signup"
+          >
+            Register
+          </NavLink>
+        </li>
+        <li
+          class="on-login user"
+        >
+          <a>
+            <span>
+              Hi, Guest
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+`;

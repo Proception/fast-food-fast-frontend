@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logout Component should match snapshot 1`] = `
+<div
+  className="main-container"
+>
+  <h2>
+     Logging out
+  </h2>
+</div>
+`;
