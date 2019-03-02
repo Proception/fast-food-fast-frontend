@@ -1,3 +1,73 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`OrderHistory Component should match snapshot 1`] = `ShallowWrapper {}`;
+exports[`OrderHistory Component should match snapshot 1`] = `
+<div>
+  <section
+    class="order"
+  >
+    <OrderHistoryCards
+      orders={
+        Array [
+          Object {
+            "id": 1,
+            "orderAddress": "52, Enitan str, Aguda, Surulere, Lagos State",
+            "orderDate": "30 August, 2016",
+            "orderNo": "12",
+            "orderStatus": "Pending",
+            "price": 5000,
+          },
+          Object {
+            "id": 2,
+            "orderAddress": "52, Enitan str, Aguda, Surulere, Lagos State",
+            "orderDate": "Boiled Yam",
+            "orderNo": "54",
+            "orderStatus": "In Progress",
+            "price": 1200,
+          },
+          Object {
+            "id": 3,
+            "orderAddress": "52, Enitan str, Aguda, Surulere, Lagos State",
+            "orderDate": "30 October, 2017",
+            "orderNo": "67",
+            "orderStatus": "Fulfilled",
+            "price": 1500,
+          },
+          Object {
+            "id": 4,
+            "orderAddress": "52, Enitan str, Aguda, Surulere, Lagos State",
+            "orderDate": "30 January, 2018",
+            "orderNo": "33",
+            "orderStatus": "Completed",
+            "price": 3000,
+          },
+        ]
+      }
+    />
+    <div
+      class="pagination"
+    >
+      <a
+        href="#"
+      >
+        «
+      </a>
+      <a
+        class="active"
+        href="#"
+      >
+        1
+      </a>
+      <a
+        href="#"
+      >
+        2
+      </a>
+      <a
+        href="#"
+      >
+        »
+      </a>
+    </div>
+  </section>
+</div>
+`;

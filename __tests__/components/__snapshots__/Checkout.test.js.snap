@@ -1,3 +1,72 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Checkout Component should match snapshot 1`] = `ShallowWrapper {}`;
+exports[`Checkout Component should match snapshot 1`] = `
+<section
+  className="order"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="fullsection"
+    >
+      <h3>
+        Your Food Selection
+      </h3>
+      <div
+        className="checkout"
+      >
+        <p>
+          <label
+            htmlFor="price"
+          >
+            Sum Total : 
+          </label>
+          <span
+            id="total"
+          />
+        </p>
+        <p>
+          <input
+            className="button"
+            id="checkout"
+            name=""
+            type="button"
+            value="Checkout"
+          />
+        </p>
+      </div>
+      <CheckoutCards
+        cart={
+          Array [
+            Object {
+              "id": 1,
+              "imageUrl": "test-file-stub",
+              "price": 500,
+              "title": "Boiled Yam",
+            },
+            Object {
+              "id": 2,
+              "imageUrl": "test-file-stub",
+              "price": 900,
+              "title": "Rice",
+            },
+            Object {
+              "id": 3,
+              "imageUrl": "test-file-stub",
+              "price": 500,
+              "title": "Fufu",
+            },
+            Object {
+              "id": 4,
+              "imageUrl": "test-file-stub",
+              "price": 300,
+              "title": "Beans",
+            },
+          ]
+        }
+      />
+    </div>
+  </div>
+</section>
+`;

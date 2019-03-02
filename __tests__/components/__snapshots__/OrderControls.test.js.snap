@@ -1,3 +1,69 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`OrderControls Component should match snapshot 1`] = `ShallowWrapper {}`;
+exports[`OrderControls Component should match snapshot 1`] = `
+<section
+  class="order"
+>
+  <div
+    class="container"
+  >
+    <div
+      class="controls"
+    >
+      <div
+        class="search-box"
+      >
+        <input
+          name=""
+          placeholder="Search Orders"
+          type="text"
+        />
+      </div>
+      <div
+        class="search-button"
+      >
+        <input
+          class="button"
+          name=""
+          type="button"
+          value="Search"
+        />
+      </div>
+      <div
+        class="sort-controls"
+        id="sort"
+      >
+        <label>
+          Sort By : 
+        </label>
+        <select>
+          <option
+            label="New"
+            value="New"
+          >
+            New
+          </option>
+          <option
+            label="Processing"
+            value="Processing"
+          >
+            Processing
+          </option>
+          <option
+            label="Cancelled"
+            value="Cancelled"
+          >
+            Cancelled
+          </option>
+          <option
+            label="Completed"
+            value="Completed"
+          >
+            Completed
+          </option>
+        </select>
+      </div>
+    </div>
+  </div>
+</section>
+`;

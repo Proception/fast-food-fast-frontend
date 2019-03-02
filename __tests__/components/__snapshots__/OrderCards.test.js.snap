@@ -1,3 +1,358 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`OrderCards Component should match snapshot 1`] = `ShallowWrapper {}`;
+exports[`OrderCards Component should match snapshot 1`] = `
+<div>
+  <div
+    class="new-order"
+    key="1"
+  >
+    <div
+      class="order-details"
+    >
+      <p>
+        <label
+          for="orderno"
+        >
+          Order No. :
+        </label>
+        <span>
+          12
+        </span>
+      </p>
+      <p>
+        <label
+          for="orderdate"
+        >
+          Order Date :
+        </label>
+        <span>
+          30 August, 2016
+        </span>
+      </p>
+      <p>
+        <label
+          for="totalprice"
+        >
+          Total Amount :
+        </label>
+        <span>
+          ₦
+          5000
+        </span>
+      </p>
+      <p>
+        <label
+          for="status"
+        >
+          Status :
+        </label>
+        <span>
+          Pending
+        </span>
+      </p>
+      <p>
+        <label
+          for="shippingaddress"
+        >
+          Shipping Address :
+        </label>
+        <span>
+          52, Enitan str, Aguda, Surulere, Lagos State
+        </span>
+      </p>
+    </div>
+    <div
+      class="order-commands"
+    >
+      <p>
+        <input
+          class="button"
+          name=""
+          type="button"
+          value="Accept"
+        />
+      </p>
+      <p>
+        <input
+          class="button"
+          name=""
+          type="button"
+          value="Decline"
+        />
+      </p>
+      <p>
+        <input
+          class="button"
+          name=""
+          type="button"
+          value="Mark as Fulfilled"
+        />
+      </p>
+    </div>
+  </div>
+  <div
+    class="new-order"
+    key="2"
+  >
+    <div
+      class="order-details"
+    >
+      <p>
+        <label
+          for="orderno"
+        >
+          Order No. :
+        </label>
+        <span>
+          54
+        </span>
+      </p>
+      <p>
+        <label
+          for="orderdate"
+        >
+          Order Date :
+        </label>
+        <span>
+          Boiled Yam
+        </span>
+      </p>
+      <p>
+        <label
+          for="totalprice"
+        >
+          Total Amount :
+        </label>
+        <span>
+          ₦
+          1200
+        </span>
+      </p>
+      <p>
+        <label
+          for="status"
+        >
+          Status :
+        </label>
+        <span>
+          In Progress
+        </span>
+      </p>
+      <p>
+        <label
+          for="shippingaddress"
+        >
+          Shipping Address :
+        </label>
+        <span>
+          52, Enitan str, Aguda, Surulere, Lagos State
+        </span>
+      </p>
+    </div>
+    <div
+      class="order-commands"
+    >
+      <p>
+        <input
+          class="button"
+          name=""
+          type="button"
+          value="Accept"
+        />
+      </p>
+      <p>
+        <input
+          class="button"
+          name=""
+          type="button"
+          value="Decline"
+        />
+      </p>
+      <p>
+        <input
+          class="button"
+          name=""
+          type="button"
+          value="Mark as Fulfilled"
+        />
+      </p>
+    </div>
+  </div>
+  <div
+    class="new-order"
+    key="3"
+  >
+    <div
+      class="order-details"
+    >
+      <p>
+        <label
+          for="orderno"
+        >
+          Order No. :
+        </label>
+        <span>
+          67
+        </span>
+      </p>
+      <p>
+        <label
+          for="orderdate"
+        >
+          Order Date :
+        </label>
+        <span>
+          30 October, 2017
+        </span>
+      </p>
+      <p>
+        <label
+          for="totalprice"
+        >
+          Total Amount :
+        </label>
+        <span>
+          ₦
+          1500
+        </span>
+      </p>
+      <p>
+        <label
+          for="status"
+        >
+          Status :
+        </label>
+        <span>
+          Fulfilled
+        </span>
+      </p>
+      <p>
+        <label
+          for="shippingaddress"
+        >
+          Shipping Address :
+        </label>
+        <span>
+          52, Enitan str, Aguda, Surulere, Lagos State
+        </span>
+      </p>
+    </div>
+    <div
+      class="order-commands"
+    >
+      <p>
+        <input
+          class="button"
+          name=""
+          type="button"
+          value="Accept"
+        />
+      </p>
+      <p>
+        <input
+          class="button"
+          name=""
+          type="button"
+          value="Decline"
+        />
+      </p>
+      <p>
+        <input
+          class="button"
+          name=""
+          type="button"
+          value="Mark as Fulfilled"
+        />
+      </p>
+    </div>
+  </div>
+  <div
+    class="new-order"
+    key="4"
+  >
+    <div
+      class="order-details"
+    >
+      <p>
+        <label
+          for="orderno"
+        >
+          Order No. :
+        </label>
+        <span>
+          33
+        </span>
+      </p>
+      <p>
+        <label
+          for="orderdate"
+        >
+          Order Date :
+        </label>
+        <span>
+          30 January, 2018
+        </span>
+      </p>
+      <p>
+        <label
+          for="totalprice"
+        >
+          Total Amount :
+        </label>
+        <span>
+          ₦
+          3000
+        </span>
+      </p>
+      <p>
+        <label
+          for="status"
+        >
+          Status :
+        </label>
+        <span>
+          Completed
+        </span>
+      </p>
+      <p>
+        <label
+          for="shippingaddress"
+        >
+          Shipping Address :
+        </label>
+        <span>
+          52, Enitan str, Aguda, Surulere, Lagos State
+        </span>
+      </p>
+    </div>
+    <div
+      class="order-commands"
+    >
+      <p>
+        <input
+          class="button"
+          name=""
+          type="button"
+          value="Accept"
+        />
+      </p>
+      <p>
+        <input
+          class="button"
+          name=""
+          type="button"
+          value="Decline"
+        />
+      </p>
+      <p>
+        <input
+          class="button"
+          name=""
+          type="button"
+          value="Mark as Fulfilled"
+        />
+      </p>
+    </div>
+  </div>
+</div>
+`;

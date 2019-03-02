@@ -1,3 +1,137 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Login Component should match snapshot 1`] = `ShallowWrapper {}`;
+exports[`Login Component should render login 1`] = `
+<section>
+  <div
+    className="container"
+  >
+    <div
+      id="wrapper"
+    >
+      <h1>
+        Enter Login Details
+      </h1>
+      <div
+        className="login"
+      >
+        <div
+          id="notif"
+        />
+        <form
+          id="loginForm"
+          noValidate={true}
+          onSubmit={[Function]}
+        >
+          <p>
+            <Input
+              handleChange={[Function]}
+              myClass="reg-control"
+              name="email"
+              placeholder="Email"
+              type="email"
+              value=""
+            />
+          </p>
+          <p>
+            <Input
+              handleChange={[Function]}
+              myClass="reg-control"
+              name="password"
+              placeholder="Password"
+              type="password"
+              value=""
+            />
+          </p>
+          <p>
+            <Input
+              disabled={false}
+              id="login"
+              myClass="button"
+              type="submit"
+              value="submit"
+            />
+          </p>
+          <h5>
+            Dont have an account click 
+            <NavLink
+              activeClassName="active"
+              aria-current="page"
+              to="/signup"
+            >
+              here
+            </NavLink>
+          </h5>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Login Component should render login with isLoading true 1`] = `
+<section>
+  <div
+    className="container"
+  >
+    <div
+      id="wrapper"
+    >
+      <h1>
+        Enter Login Details
+      </h1>
+      <div
+        className="login"
+      >
+        <div
+          id="notif"
+        />
+        <form
+          id="loginForm"
+          noValidate={true}
+          onSubmit={[Function]}
+        >
+          <p>
+            <Input
+              handleChange={[Function]}
+              myClass="reg-control"
+              name="email"
+              placeholder="Email"
+              type="email"
+              value=""
+            />
+          </p>
+          <p>
+            <Input
+              handleChange={[Function]}
+              myClass="reg-control"
+              name="password"
+              placeholder="Password"
+              type="password"
+              value=""
+            />
+          </p>
+          <p>
+            <Input
+              disabled={true}
+              id="login"
+              myClass="button"
+              type="submit"
+              value="Processing"
+            />
+          </p>
+          <h5>
+            Dont have an account click 
+            <NavLink
+              activeClassName="active"
+              aria-current="page"
+              to="/signup"
+            >
+              here
+            </NavLink>
+          </h5>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+`;

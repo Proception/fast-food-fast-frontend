@@ -1,3 +1,74 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`RestaurantMenu Component should match snapshot 1`] = `ShallowWrapper {}`;
+exports[`RestaurantMenu Component should match snapshot 1`] = `
+<section
+  className="order"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="header"
+    >
+      <h3>
+        Core Dishes
+      </h3>
+      <div
+        className="pagination"
+      >
+        <a
+          href="#"
+        >
+          «
+        </a>
+        <a
+          className="active"
+          href="#"
+        >
+          1
+        </a>
+        <a
+          href="#"
+        >
+          2
+        </a>
+        <a
+          href="#"
+        >
+          »
+        </a>
+      </div>
+    </div>
+    <FoodCards
+      menu={
+        Array [
+          Object {
+            "id": 1,
+            "imageUrl": "test-file-stub",
+            "price": 500,
+            "title": "Boiled Yam",
+          },
+          Object {
+            "id": 2,
+            "imageUrl": "test-file-stub",
+            "price": 900,
+            "title": "Rice",
+          },
+          Object {
+            "id": 3,
+            "imageUrl": "test-file-stub",
+            "price": 500,
+            "title": "Fufu",
+          },
+          Object {
+            "id": 4,
+            "imageUrl": "test-file-stub",
+            "price": 300,
+            "title": "Beans",
+          },
+        ]
+      }
+    />
+  </div>
+</section>
+`;

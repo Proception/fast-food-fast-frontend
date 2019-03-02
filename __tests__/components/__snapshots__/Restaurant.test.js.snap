@@ -1,3 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Restaurant Component should match snapshot 1`] = `ShallowWrapper {}`;
+exports[`Restaurant Component should match snapshot 1`] = `
+<div
+  className="main-container"
+>
+  <h2>
+     Restaurant Menu
+  </h2>
+  <RestaurantControls />
+  <RestaurantMenu />
+</div>
+`;
