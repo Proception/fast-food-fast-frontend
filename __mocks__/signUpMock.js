@@ -1,4 +1,5 @@
-import { signUpUser } from '../src/actions/authActions'
+import { signUpUser } from '../src/actions/authActions';
+import { preventDefault } from './userMocks';
 
 const props = {
     signUpUser,
@@ -7,7 +8,7 @@ const props = {
     },
   };
   const propsIsLoading = {
-    loginUser,
+    signUpUser,
     auth: {
         isLoading: true,
     },
@@ -21,4 +22,88 @@ const props = {
         cpassword: 'pass',
     }
   };
-export { props, state, propsIsLoading };
+  const correctEventData = [
+    { 
+      name: 'Ben',
+    },
+    {
+      email: 'ben@gmail.com',
+    },
+    {
+      pnumber: '07062257273',
+    },
+    {
+
+      password: 'pass',
+    },
+    {
+      cpassword: 'pass',
+    },
+  ]
+
+  const invalidEmailEventData = [
+    { 
+      name: 'Ben',
+    },
+    {
+      email: 'bengmail.com',
+    },
+    {
+      pnumber: '07062257273',
+    },
+    {
+
+      password: 'pass',
+    },
+    {
+      cpassword: 'pass',
+    },
+  ]
+  
+  const invalidNumberEventData = [
+    { 
+      name: 'Ben',
+    },
+    {
+      email: 'ben@gmail.com',
+    },
+    {
+      pnumber: 'ererererr',
+    },
+    {
+
+      password: 'pass',
+    },
+    {
+      cpassword: 'pass',
+    },
+  ]
+
+  const invalidPasswordEventData = [
+    { 
+      name: 'Ben',
+    },
+    {
+      email: 'ben@gmail.com',
+    },
+    {
+      pnumber: '07062257273',
+    },
+    {
+
+      password: 'pass',
+    },
+    {
+      cpassword: 'passs',
+    },
+  ]
+  export {
+    props,
+    state,
+    propsIsLoading,
+    preventDefault,
+    correctEventData,
+    invalidEmailEventData,
+    invalidNumberEventData,
+    invalidPasswordEventData 
+  };

@@ -16,10 +16,46 @@ export const completeSignupRequest = () => ({
 export const setToken = (payload) => ({
   type: SET_TOKEN,
   payload,
-})
+});
+
+const handleSignupErrorResponse = (error, dispatch, email) => {
+  const { code } =  error.response.data;
+    if (code === 409) {
+      Notify.notifyError(`${email} exists on the platform`);
+      dispatch(completeSignupRequest());
+    }
+
+    if(!(code === 409)){
+      Notify.notifyError(`There was an error registering ${email}, please try again`);
+      dispatch(completeSignupRequest());
+    }
+};
+
+const handleSignupSuccessResponse = (response, dispatch, email) => {
+  const { code, data } = response.data;
+
+  if (code === 201) {
+    Notify.notifySuccess(`${email} has successfully been registered`);
+    dispatch(completeSignupRequest());
+    localStorage.setItem('authToken', data);
+    window.location.replace('/');
+  }
+  
+  if (!(code === 201)){
+    Notify.notifySuccess(`${email} has successfully registered`);
+    dispatch(completeSignupRequest());
+  }
+}
+
 
 export const signUpUser = userData => async (dispatch) => {
-  const { name, email, password, pnumber, cpassword } = userData;
+  const {
+    name,
+    email,
+    password,
+    pnumber,
+    cpassword
+  } = userData;
 
   const signupData = {
     email: email,
@@ -28,55 +64,42 @@ export const signUpUser = userData => async (dispatch) => {
     password: password,
     cpassword: cpassword,
   }
-
+let res;
   try {
     dispatch(makeSignupRequest());
-    const res = await axios.post(`${basePath}/auth/signup`, signupData);
-    const { code, data } = res.data;
-
-    if (code === 201) {
-      Notify.notifySuccess(`${email} has successfully been registered`);
-      dispatch(completeSignupRequest());
-
-      localStorage.setItem('authToken', data);
-
-      window.location.replace('/');
-    } else {
-      Notify.notifySuccess(`${email} has successfully registered`);
-      dispatch(completeSignupRequest());
-    }
+    res = await axios.post(`${basePath}/auth/signup`, signupData);
+    handleSignupSuccessResponse(res, dispatch, email);
   } catch (error) {
-    const { code } =  error.response.data;
-    if (code === 409) {
-      Notify.notifyError(`${email} exists on the platform`);
-      dispatch(completeSignupRequest());
-    }else{
-      Notify.notifyError(`There was an error registering ${name}, please try again`);
-      dispatch(completeSignupRequest());
-    }
-   
+    handleSignupErrorResponse(error, dispatch, email);
   }
 }
 
+
+const handleLoginSuccessResponse = (response, dispatch) => {
+  const { code, messages, data } = response.data;
+  if (code === 200) {
+    Notify.notifySuccess(`${messages}`);
+    localStorage.setItem('authToken', data);
+    window.location.replace('/');
+    dispatch(completeSignupRequest());
+  }
+}
+
+const handleLoginErrorResponse = (error, dispatch) => {
+  const { code, messages } =  error.response.data;
+  if (code > 399) {
+    Notify.notifyError(`${messages}`);
+    dispatch(completeSignupRequest());
+  }
+}
 
 export const loginUser = loginData => async (dispatch) => {
 
   try {
     dispatch(makeSignupRequest());
     const res = await axios.post(`${basePath}/auth/login`, loginData);
-    const { code, messages, data } = res.data;
-
-    if (code === 200) {
-      Notify.notifySuccess(`${messages}`);
-      localStorage.setItem('authToken', data);
-      window.location.replace('/');
-      dispatch(completeSignupRequest());
-    }
+    handleLoginSuccessResponse(res, dispatch);
   } catch (error) {
-    const { code, messages } =  error.response.data;
-    if (code > 399) {
-      Notify.notifyError(`${messages}`);
-      dispatch(completeSignupRequest());
-    }
+    handleLoginErrorResponse(error, dispatch);
   }
 }

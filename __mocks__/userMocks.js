@@ -10,3 +10,7 @@ export const userSignUp = {
     password: "benedict",
     cpassword: "benedict",
 };
+
+export const preventDefault = {
+    preventDefault: ()=>{},
+  }

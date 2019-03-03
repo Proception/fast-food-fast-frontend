@@ -37,13 +37,36 @@ export class Login extends Component {
     )
   }
 
+  generateForms(){
+    const InputData = [
+      {
+        type: 'email',
+        name: 'email',
+        value: this.state.loginUser.email,
+        placeholder: 'Email',
+      },
+      {
+        type: 'password',
+        name: 'password',
+        value: this.state.loginUser.password,
+        placeholder: 'Password',
+      },
+    ];
+
+    return InputData.map(
+      (item, index) => <p><Input
+        key={index} type={ item.type } name ={ item.name }
+        value={ item.value } placeholder= { item.placeholder }
+        handleChange={ this.handleInput } myClass = {'reg-control'}/></p>,
+    );
+  }
+
   handleFormSubmit(e) {
     e.preventDefault();
     let loginData = this.state.loginUser;
 
     const { 
-      email,
-      password
+      email
     } = loginData;
 
     try {
@@ -75,14 +98,9 @@ export class Login extends Component {
 						<div className="login">
 							<div id="notif"></div>
 							<form id="loginForm" noValidate onSubmit={this.handleFormSubmit}>
-								<p><Input type={'email'} name={'email'}
-										value={this.state.loginUser.email} placeholder={'Email'}
-										handleChange={this.handleInput} myClass={'reg-control'}
-									/></p>
-								<p><Input type={'password'} name={'password'}
-										value={this.state.loginUser.password} placeholder={'Password'}
-										handleChange={this.handleInput} myClass={'reg-control'}
-									/></p>
+                  {
+                    this.generateForms()
+                  }
 								<p><Input id="login" type={'submit'} disabled={this.props.auth.isLoading}
                   value={this.props.auth.isLoading ? 'Processing' : 'submit'}
                   myClass={'button'}
