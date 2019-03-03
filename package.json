@@ -4,11 +4,14 @@
   "description": "Fast food fast React frontend",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
     "test": "jest --u --coverage --colors --verbose",
     "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls",
     "test:watch": "jest --watch",
     "start:dev": "webpack-dev-server --mode development ./src/index.js --config ./webpack.config.js --output ./dist/bundle.js --open",
-    "build": "webpack --mode production ./src/app/index.js --output ./dist/bundle.js"
+    "build": "webpack --mode production ./src/index.js --output ./dist/bundle.js",
+    "heroku-prebuild": "npm run-script install",
+    "heroku-postbuild": "npm run-script build"
   },
   "repository": {
     "type": "git",
@@ -22,6 +25,7 @@
   "homepage": "https://github.com/Proception/fast-food-fast-frontend#readme",
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.3.3",
+    "express": "^4.16.4",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-router-dom": "^4.3.1",

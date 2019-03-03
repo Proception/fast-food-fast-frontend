@@ -29,6 +29,48 @@ export class Signup extends Component {
     this.handleInput = this.handleInput.bind(this);
   }
 
+  generateForms(){
+    const InputData = [
+      {
+        type: 'email',
+        name: 'email',
+        value: this.state.newUser.email,
+        placeholder: 'Email',
+      },
+      {
+        type: 'text',
+        name: 'name',
+        value: this.state.newUser.name,
+        placeholder: 'Full Name',
+      },
+      {
+        type: 'number',
+        name: 'pnumber',
+        value: this.state.newUser.pnumber,
+        placeholder: 'Phone Number',
+      },
+      {
+        type: 'password',
+        name: 'password',
+        value: this.state.newUser.password,
+        placeholder: 'Password',
+      },
+      {
+        type: 'password',
+        name: 'cpassword',
+        value: this.state.newUser.cpassword,
+        placeholder: 'Confirm Password',
+      },
+    ];
+
+    return InputData.map(
+      (item, index) => <p><Input
+        key={index} type={ item.type } name ={ item.name }
+        value={ item.value } placeholder= { item.placeholder }
+        handleChange={ this.handleInput } myClass = {'reg-control'}/></p>,
+    );
+  }
+
   handleInput(e) {
     let value = e.target.value;
     let name = e.target.name;
@@ -42,12 +84,46 @@ export class Signup extends Component {
     )
   }
 
+  checkInput(userData){
+    Object.entries(userData).forEach(
+      ([key, value]) => {
+        if (!genericValidator(value)) {
+          if (key === 'cpassword') {
+            Notify.notifyError('Please enter a confirm password');
+            throw BreakException;
+          }
+          if (key === 'pnumber') {
+            Notify.notifyError('Please enter a Phone Number');
+            throw BreakException;
+          }
+          Notify.notifyError(`Please enter a valid ${key}`);
+          throw BreakException;
+        }
+      }
+    );
+  }
+
+  validateInput(email, pnumber, password, cpassword){
+    if (!emailValidator(email)) {
+      Notify.notifyError(`${email} is not a valid email`);
+      throw BreakException;
+    }
+    if (!phoneNumberValidator(pnumber)) {
+      Notify.notifyError(`${pnumber} is not a phone number`);
+      throw BreakException;
+    } 
+
+    if (!passwordValidator(password, cpassword)) {
+      Notify.notifyError('Passwords do not match');
+      throw BreakException;
+    }
+  }
+
   handleFormSubmit(e) {
     e.preventDefault();
     let userData = this.state.newUser;
 
     const { 
-      name,
       email,
       pnumber,
       password,
@@ -55,37 +131,8 @@ export class Signup extends Component {
     } = userData;
 
     try {
-      Object.entries(userData).forEach(
-        ([key, value]) => {
-          if (!genericValidator(value)) {
-            if (key === 'cpassword') {
-              Notify.notifyError('Please enter a confirm password');
-              throw BreakException;
-            }
-            if (key === 'pnumber') {
-              Notify.notifyError('Please enter a Phone Number');
-              throw BreakException;
-            }
-            Notify.notifyError(`Please enter a valid ${key}`);
-            throw BreakException;
-          }
-        }
-      );
-
-      if (!emailValidator(email)) {
-        Notify.notifyError(`${email} is not a valid email`);
-        throw BreakException;
-      }
-      if (!phoneNumberValidator(pnumber)) {
-        Notify.notifyError(`${pnumber} is not a phone number`);
-        throw BreakException;
-      } 
-
-      if (!passwordValidator(password, cpassword)) {
-        Notify.notifyError('Passwords do not match');
-        throw BreakException;
-      }
-
+      this.checkInput(userData);
+      this.validateInput(email, pnumber, password, cpassword);
       this.props.signUpUser(userData);
     } catch (error) {
       
@@ -101,26 +148,9 @@ export class Signup extends Component {
             <div class="register">
               <div id="notif"></div>
               <form id="signupForm" noValidate onSubmit={this.handleFormSubmit}>
-                <p><Input type={'email'} name={'email'}
-                  value={this.state.newUser.email} placeholder={'Email'}
-                  handleChange={this.handleInput} myClass={'reg-control'}
-                /></p>
-                <p><Input type={'text'} name={'name'}
-                  value={this.state.newUser.name} placeholder={'Full Name'}
-                  handleChange={this.handleInput} myClass={'reg-control'}
-                /></p>
-                <p><Input type={'number'} name={'pnumber'}
-                  value={this.state.newUser.pnumber} placeholder={'Phone number'}
-                  handleChange={this.handleInput} myClass={'reg-control'}
-                /></p>
-                <p><Input type={'password'} name={'password'}
-                  value={this.state.newUser.password} placeholder={'Password'}
-                  handleChange={this.handleInput} myClass={'reg-control'}
-                /></p>
-                <p><Input type={'password'} name={'cpassword'}
-                  value={this.state.newUser.cpassword} placeholder={'Confirm Password'}
-                  handleChange={this.handleInput} myClass={'reg-control'}
-                /></p>
+                {
+                  this.generateForms()
+                }
                 <p><Input type={'submit'} disabled={this.props.auth.isLoading}
                   value={this.props.auth.isLoading ? 'Processing' : 'submit'}
                   myClass={'button'}

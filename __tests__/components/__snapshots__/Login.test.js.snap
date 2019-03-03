@@ -25,6 +25,7 @@ exports[`Login Component should render login 1`] = `
           <p>
             <Input
               handleChange={[Function]}
+              key="0"
               myClass="reg-control"
               name="email"
               placeholder="Email"
@@ -35,6 +36,7 @@ exports[`Login Component should render login 1`] = `
           <p>
             <Input
               handleChange={[Function]}
+              key="1"
               myClass="reg-control"
               name="password"
               placeholder="Password"
@@ -93,6 +95,7 @@ exports[`Login Component should render login with isLoading true 1`] = `
           <p>
             <Input
               handleChange={[Function]}
+              key="0"
               myClass="reg-control"
               name="email"
               placeholder="Email"
@@ -103,6 +106,7 @@ exports[`Login Component should render login with isLoading true 1`] = `
           <p>
             <Input
               handleChange={[Function]}
+              key="1"
               myClass="reg-control"
               name="password"
               placeholder="Password"

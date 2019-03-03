@@ -1,4 +1,5 @@
-import { loginUser } from '../src/actions/authActions'
+import { loginUser } from '../src/actions/authActions';
+import { preventDefault } from './userMocks';
 
 const props = {
     loginUser,
@@ -18,5 +19,30 @@ const props = {
         password: 'pass',
     }
   };
-export { props, state, propsIsLoading };
+
+const correctEventEmail = {
+  ...preventDefault,
+  target: {
+    name: "email",
+    value: "omasan.esimaje@gmail.com"
+  }
+}
+const correctEventPass = {
+  ...preventDefault,
+  target: {
+    name: "password",
+    value: "pass"
+  },
+}
+
+const wrongEventEmail = {
+  ...preventDefault,
+  target: {
+    name: "email",
+    value: "omasan.esimajegmail.com"
+  }
+}
+
+
+export { props, state, propsIsLoading, preventDefault, correctEventEmail, correctEventPass, wrongEventEmail };
 
