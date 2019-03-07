@@ -239,7 +239,7 @@ describe('Test Actions', () => {
     const actions = store.getActions()
     const state = store.getState();
 
-    expect(actions[0].type).toEqual("GET_ORDERS")
+    expect(actions[0].type).toEqual("COMPLETE_ORDER_REQUEST")
     done();
   })
   it('should dispatch getUserOrder Action with success', async (done) => {
@@ -258,7 +258,7 @@ describe('Test Actions', () => {
     const actions = store.getActions()
     const state = store.getState();
 
-    expect(actions[0].type).toEqual("GET_USER_ORDERS")
+    expect(actions[0].type).toEqual("COMPLETE_ORDER_REQUEST")
     done();
   })
 });
