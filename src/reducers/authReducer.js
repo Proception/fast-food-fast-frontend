@@ -23,14 +23,10 @@ export default function (state = initialState, action) {
         isLoading: true,
       };
     case COMPLETE_SIGNUP_REQUEST:
-      console.log('completing');
-      console.log('Checking state: ', state.auth);
       return {
         isLoading: false,
       };
     case SET_TOKEN:
-      console.log('calling set token');
-      console.log('Token payload : ', action.payload);
       return {
           isAuthenticated: true,
           user: action.payload

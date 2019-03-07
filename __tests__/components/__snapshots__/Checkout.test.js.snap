@@ -24,48 +24,62 @@ exports[`Checkout Component should match snapshot 1`] = `
           </label>
           <span
             id="total"
-          />
+          >
+            ₦
+            0
+          </span>
         </p>
         <p>
           <input
             className="button"
             id="checkout"
             name=""
+            onClick={[Function]}
             type="button"
-            value="Checkout"
+            value="Processing"
           />
         </p>
       </div>
-      <CheckoutCards
-        cart={
-          Array [
+      <div
+        id="sec"
+      >
+        <CheckoutCards
+          item={
             Object {
               "id": 1,
               "imageUrl": "test-file-stub",
               "price": 500,
               "title": "Boiled Yam",
-            },
+            }
+          }
+          onChange={[Function]}
+          onClick={[Function]}
+        />
+        <CheckoutCards
+          item={
             Object {
               "id": 2,
               "imageUrl": "test-file-stub",
               "price": 900,
               "title": "Rice",
-            },
+            }
+          }
+          onChange={[Function]}
+          onClick={[Function]}
+        />
+        <CheckoutCards
+          item={
             Object {
               "id": 3,
               "imageUrl": "test-file-stub",
               "price": 500,
               "title": "Fufu",
-            },
-            Object {
-              "id": 4,
-              "imageUrl": "test-file-stub",
-              "price": 300,
-              "title": "Beans",
-            },
-          ]
-        }
-      />
+            }
+          }
+          onChange={[Function]}
+          onClick={[Function]}
+        />
+      </div>
     </div>
   </div>
 </section>

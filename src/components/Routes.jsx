@@ -6,7 +6,6 @@ import NotFound from "./NotFound.jsx"
 import Restaurant from "./Restaurant.jsx";
 import Signup from './Signup.jsx';
 import { Route, Switch } from 'react-router-dom';
-// import PrivateRoute from './PrivateRoute.jsx';
 import AddFoodItems from './AddFoodItems.jsx';
 import Checkout from './Checkout.jsx';
 import Orders from './Orders.jsx';
@@ -23,8 +22,6 @@ const Routes = () => (
         <Route path="/checkout" component={Checkout}></Route>
         <Route path="/orders" component={Orders}></Route>
         <Route path="/orderhistory" component={OrderHistory}></Route>
-
-        {/* <PrivateRoute  exact path="/menu" component={Restaurant}></PrivateRoute> */}
         <Route component={NotFound}></Route>
     </Switch>
 );

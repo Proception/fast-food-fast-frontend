@@ -3,7 +3,7 @@ import rice from '../assets/images/rice.jpg';
 import fufu from '../assets/images/fufu.jpg';
 
 const props = {
-  menu: [
+  item: [
     {
       "id": 1,
       "imageUrl": yam,
@@ -22,7 +22,9 @@ const props = {
       "price": 500,
       "title": "Fufu",
     },
-  ]
+  ],
+  onClick: () => {},
+  onChange: () => {}
 };
 export default props;
   

@@ -2,196 +2,58 @@
 
 exports[`CheckoutCards Component should match snapshot 1`] = `
 <div
-  id="sec"
+  className="selected-items"
 >
   <div
-    className="selected-items"
-    key="1"
+    className="item-details"
   >
-    <div
-      className="item-details"
-    >
-      <p>
-        <label
-          htmlFor="foodname"
-        >
-          Food Name :
-          <span>
-            Boiled Yam
-          </span>
-        </label>
-      </p>
-      <p>
-        <label
-          htmlFor="price"
-        >
-          Price per unit :
-          <span>
-            ₦
-            500
-          </span>
-        </label>
-      </p>
-      <p>
-        <label
-          htmlFor="quantity"
-        >
-          Qty :
-          <input
-            max="100"
-            min="0"
-            name="1"
-            step="1"
-            type="number"
-            value="1"
-          />
-        </label>
-      </p>
-    </div>
-    <div
-      className="item-commands"
-    >
-      <p>
-        <img
-          src="test-file-stub"
-        />
-      </p>
-      <p>
+    <p>
+      <label
+        htmlFor="foodname"
+      >
+        Food Name :
+        <span />
+      </label>
+    </p>
+    <p>
+      <label
+        htmlFor="price"
+      >
+        Price per unit :
+        <span>
+          ₦
+        </span>
+      </label>
+    </p>
+    <p>
+      <label
+        htmlFor="quantity"
+      >
+        Qty :
         <input
-          className="button"
-          id={1}
-          name=""
-          type="button"
-          value="Delete Item"
+          max="100"
+          min="1"
+          name="1"
+          step="1"
+          type="number"
         />
-      </p>
-    </div>
+      </label>
+    </p>
   </div>
   <div
-    className="selected-items"
-    key="2"
+    className="item-commands"
   >
-    <div
-      className="item-details"
-    >
-      <p>
-        <label
-          htmlFor="foodname"
-        >
-          Food Name :
-          <span>
-            Rice
-          </span>
-        </label>
-      </p>
-      <p>
-        <label
-          htmlFor="price"
-        >
-          Price per unit :
-          <span>
-            ₦
-            900
-          </span>
-        </label>
-      </p>
-      <p>
-        <label
-          htmlFor="quantity"
-        >
-          Qty :
-          <input
-            max="100"
-            min="0"
-            name="1"
-            step="1"
-            type="number"
-            value="1"
-          />
-        </label>
-      </p>
-    </div>
-    <div
-      className="item-commands"
-    >
-      <p>
-        <img
-          src="test-file-stub"
-        />
-      </p>
-      <p>
-        <input
-          className="button"
-          id={2}
-          name=""
-          type="button"
-          value="Delete Item"
-        />
-      </p>
-    </div>
-  </div>
-  <div
-    className="selected-items"
-    key="3"
-  >
-    <div
-      className="item-details"
-    >
-      <p>
-        <label
-          htmlFor="foodname"
-        >
-          Food Name :
-          <span>
-            Fufu
-          </span>
-        </label>
-      </p>
-      <p>
-        <label
-          htmlFor="price"
-        >
-          Price per unit :
-          <span>
-            ₦
-            500
-          </span>
-        </label>
-      </p>
-      <p>
-        <label
-          htmlFor="quantity"
-        >
-          Qty :
-          <input
-            max="100"
-            min="0"
-            name="1"
-            step="1"
-            type="number"
-            value="1"
-          />
-        </label>
-      </p>
-    </div>
-    <div
-      className="item-commands"
-    >
-      <p>
-        <img
-          src="test-file-stub"
-        />
-      </p>
-      <p>
-        <input
-          className="button"
-          id={3}
-          name=""
-          type="button"
-          value="Delete Item"
-        />
-      </p>
-    </div>
+    <p>
+      <img />
+    </p>
+    <p>
+      <input
+        className="button"
+        name=""
+        type="button"
+        value="Delete Item"
+      />
+    </p>
   </div>
 </div>
 `;

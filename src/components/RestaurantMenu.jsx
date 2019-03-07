@@ -1,43 +1,61 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { addItemToCart, updateCartTotal } from '../actions/orderActions';
 import FoodCards from './FoodCards.jsx'
 import yam from '../assets/images/yam.jpg';
 import rice from '../assets/images/rice.jpg';
 import fufu from '../assets/images/fufu.jpg';
 import beans from '../assets/images/beans.jpg';
 
-export default class RestaurantMenu extends Component {
+export class RestaurantMenu extends Component {
   state = {
-    menu: [
+    menu: [ 
       {
         "id": 1,
         "imageUrl": yam,
         "price": 500,
         "title": "Boiled Yam",
+        "quantity": 1,
       },
       {
         "id": 2,
         "imageUrl": rice,
         "price": 900,
         "title": "Rice",
+        "quantity": 1,
       },
       {
         "id": 3,
         "imageUrl": fufu,
         "price": 500,
         "title": "Fufu",
+        "quantity": 1,
       },
       {
         "id": 4,
         "imageUrl": beans,
         "price": 300,
         "title": "Beans",
+        "quantity": 1,
       },
-    ]
+    ],
   };
+
+  handleClick = (e, data) => {
+    const { addItemToCart, updateCartTotal } = this.props;
+    addItemToCart(data);
+    updateCartTotal();
+  }
 
   generateMenu(){
     const { menu } = this.state;
-    return <FoodCards menu={menu}/>
+    return (
+      <ul className="list-group list-group-flush">
+      {menu.map(item => (
+          <FoodCards key={item.id} onClick={ ((e) => this.handleClick(e, item)) }  item={item}/>
+          ))}
+      </ul>
+      )
   }
   render() {
     return (
@@ -61,3 +79,10 @@ export default class RestaurantMenu extends Component {
     )
   }
 }
+
+const mapStateToProps = state => ({
+  auth: state.auth,
+  order: state.order,
+});
+
+export default connect(mapStateToProps, { addItemToCart, updateCartTotal})(RestaurantMenu);

@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 
-const OrderHistoryCards = ({ orders }) => (
-  
+const OrderHistoryCards = ({ userOrders }) => (
     <div class="container">
-        {orders.map(item => (
-          <div class="old-order" key={item.id}>
-            <p><label for="orderno">Order No. :</label><span>{item.orderNo}</span></p>
-            <p><label for="orderdate">Order Date :</label><span>{item.orderDate}</span></p>
-            <p><label for="totalprice">Total Amount :</label><span>&#8358;{item.price}</span></p>
-            <p><label for="status">Status :</label> <span>{item.orderStatus}</span></p>
-            <p><label for="shippingaddress">Shipping Address :</label> <span>{item.orderAddress}</span></p>
+        {userOrders.map(item => (
+          <div class="old-order" key={item.order_id}>
+            <p><label htmlFor="orderno">Order No. :</label><span>{item.order_id}</span></p>
+            <p><label htmlFor="orderdate">Order Date :</label><span>{new Date(item.order_date).toGMTString()}</span></p>
+            <p><label htmlFor="totalprice">Total Amount :</label><span>&#8358;{item.order_amount}</span></p>
+            <p><label htmlFor="status">Status :</label> <span>{item.order_status}</span></p>
           </div>
         ))}
     </div>

@@ -5,8 +5,8 @@ import props from '../../__mocks__/foodCardsMock';
 
 let wrapper;
 beforeEach(() => {
-  const { menu } = props;
-  wrapper = shallow(<FoodCards menu={menu}/>);
+  const { item } = props;
+  wrapper = shallow(<FoodCards item={item}/>);
 });
 describe('FoodCards Component', () => {
   it('should match snapshot', () => {
