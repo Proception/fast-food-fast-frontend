@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import OrderCards from '../../src/components/OrderCards.jsx';
-import props from '../../__mocks__/orderCardsMock.js';
+import { props } from '../../__mocks__/orderCardsMock.js';
 
 let wrapper;
 beforeEach(() => {

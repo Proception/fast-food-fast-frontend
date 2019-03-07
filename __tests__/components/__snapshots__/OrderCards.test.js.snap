@@ -4,7 +4,6 @@ exports[`OrderCards Component should match snapshot 1`] = `
 <div>
   <div
     class="new-order"
-    key="1"
   >
     <div
       class="order-details"
@@ -15,9 +14,7 @@ exports[`OrderCards Component should match snapshot 1`] = `
         >
           Order No. :
         </label>
-        <span>
-          12
-        </span>
+        <span />
       </p>
       <p>
         <label
@@ -26,7 +23,7 @@ exports[`OrderCards Component should match snapshot 1`] = `
           Order Date :
         </label>
         <span>
-          30 August, 2016
+          Invalid Date
         </span>
       </p>
       <p>
@@ -37,7 +34,6 @@ exports[`OrderCards Component should match snapshot 1`] = `
         </label>
         <span>
           ₦
-          5000
         </span>
       </p>
       <p>
@@ -46,19 +42,7 @@ exports[`OrderCards Component should match snapshot 1`] = `
         >
           Status :
         </label>
-        <span>
-          Pending
-        </span>
-      </p>
-      <p>
-        <label
-          for="shippingaddress"
-        >
-          Shipping Address :
-        </label>
-        <span>
-          52, Enitan str, Aguda, Surulere, Lagos State
-        </span>
+        <span />
       </p>
     </div>
     <div
@@ -92,7 +76,6 @@ exports[`OrderCards Component should match snapshot 1`] = `
   </div>
   <div
     class="new-order"
-    key="2"
   >
     <div
       class="order-details"
@@ -103,9 +86,7 @@ exports[`OrderCards Component should match snapshot 1`] = `
         >
           Order No. :
         </label>
-        <span>
-          54
-        </span>
+        <span />
       </p>
       <p>
         <label
@@ -114,7 +95,7 @@ exports[`OrderCards Component should match snapshot 1`] = `
           Order Date :
         </label>
         <span>
-          Boiled Yam
+          Invalid Date
         </span>
       </p>
       <p>
@@ -125,7 +106,6 @@ exports[`OrderCards Component should match snapshot 1`] = `
         </label>
         <span>
           ₦
-          1200
         </span>
       </p>
       <p>
@@ -134,19 +114,7 @@ exports[`OrderCards Component should match snapshot 1`] = `
         >
           Status :
         </label>
-        <span>
-          In Progress
-        </span>
-      </p>
-      <p>
-        <label
-          for="shippingaddress"
-        >
-          Shipping Address :
-        </label>
-        <span>
-          52, Enitan str, Aguda, Surulere, Lagos State
-        </span>
+        <span />
       </p>
     </div>
     <div
@@ -180,7 +148,6 @@ exports[`OrderCards Component should match snapshot 1`] = `
   </div>
   <div
     class="new-order"
-    key="3"
   >
     <div
       class="order-details"
@@ -191,9 +158,7 @@ exports[`OrderCards Component should match snapshot 1`] = `
         >
           Order No. :
         </label>
-        <span>
-          67
-        </span>
+        <span />
       </p>
       <p>
         <label
@@ -202,7 +167,7 @@ exports[`OrderCards Component should match snapshot 1`] = `
           Order Date :
         </label>
         <span>
-          30 October, 2017
+          Invalid Date
         </span>
       </p>
       <p>
@@ -213,7 +178,6 @@ exports[`OrderCards Component should match snapshot 1`] = `
         </label>
         <span>
           ₦
-          1500
         </span>
       </p>
       <p>
@@ -222,19 +186,7 @@ exports[`OrderCards Component should match snapshot 1`] = `
         >
           Status :
         </label>
-        <span>
-          Fulfilled
-        </span>
-      </p>
-      <p>
-        <label
-          for="shippingaddress"
-        >
-          Shipping Address :
-        </label>
-        <span>
-          52, Enitan str, Aguda, Surulere, Lagos State
-        </span>
+        <span />
       </p>
     </div>
     <div
@@ -268,7 +220,6 @@ exports[`OrderCards Component should match snapshot 1`] = `
   </div>
   <div
     class="new-order"
-    key="4"
   >
     <div
       class="order-details"
@@ -279,9 +230,7 @@ exports[`OrderCards Component should match snapshot 1`] = `
         >
           Order No. :
         </label>
-        <span>
-          33
-        </span>
+        <span />
       </p>
       <p>
         <label
@@ -290,7 +239,7 @@ exports[`OrderCards Component should match snapshot 1`] = `
           Order Date :
         </label>
         <span>
-          30 January, 2018
+          Invalid Date
         </span>
       </p>
       <p>
@@ -301,7 +250,6 @@ exports[`OrderCards Component should match snapshot 1`] = `
         </label>
         <span>
           ₦
-          3000
         </span>
       </p>
       <p>
@@ -310,19 +258,7 @@ exports[`OrderCards Component should match snapshot 1`] = `
         >
           Status :
         </label>
-        <span>
-          Completed
-        </span>
-      </p>
-      <p>
-        <label
-          for="shippingaddress"
-        >
-          Shipping Address :
-        </label>
-        <span>
-          52, Enitan str, Aguda, Surulere, Lagos State
-        </span>
+        <span />
       </p>
     </div>
     <div

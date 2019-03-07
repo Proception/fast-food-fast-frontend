@@ -8,6 +8,6 @@ exports[`Restaurant Component should match snapshot 1`] = `
      Restaurant Menu
   </h2>
   <RestaurantControls />
-  <RestaurantMenu />
+  <Connect(RestaurantMenu) />
 </div>
 `;

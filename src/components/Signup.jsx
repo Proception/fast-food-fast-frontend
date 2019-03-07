@@ -80,7 +80,7 @@ export class Signup extends Component {
           ...prevState.newUser, [name]: value
         }
       }
-    }, () => console.log(this.state.newUser)
+    }, () => {}
     )
   }
 

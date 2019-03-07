@@ -6,234 +6,166 @@ exports[`OrderHistoryCards Component should match snapshot 1`] = `
 >
   <div
     class="old-order"
-    key="1"
   >
     <p>
       <label
-        for="orderno"
+        htmlFor="orderno"
       >
         Order No. :
       </label>
-      <span>
-        12
-      </span>
+      <span />
     </p>
     <p>
       <label
-        for="orderdate"
+        htmlFor="orderdate"
       >
         Order Date :
       </label>
       <span>
-        30 August, 2016
+        Invalid Date
       </span>
     </p>
     <p>
       <label
-        for="totalprice"
+        htmlFor="totalprice"
       >
         Total Amount :
       </label>
       <span>
         ₦
-        5000
       </span>
     </p>
     <p>
       <label
-        for="status"
+        htmlFor="status"
       >
         Status :
       </label>
        
-      <span>
-        Pending
-      </span>
-    </p>
-    <p>
-      <label
-        for="shippingaddress"
-      >
-        Shipping Address :
-      </label>
-       
-      <span>
-        52, Enitan str, Aguda, Surulere, Lagos State
-      </span>
+      <span />
     </p>
   </div>
   <div
     class="old-order"
-    key="2"
   >
     <p>
       <label
-        for="orderno"
+        htmlFor="orderno"
       >
         Order No. :
       </label>
-      <span>
-        54
-      </span>
+      <span />
     </p>
     <p>
       <label
-        for="orderdate"
+        htmlFor="orderdate"
       >
         Order Date :
       </label>
       <span>
-        Boiled Yam
+        Invalid Date
       </span>
     </p>
     <p>
       <label
-        for="totalprice"
+        htmlFor="totalprice"
       >
         Total Amount :
       </label>
       <span>
         ₦
-        1200
       </span>
     </p>
     <p>
       <label
-        for="status"
+        htmlFor="status"
       >
         Status :
       </label>
        
-      <span>
-        In Progress
-      </span>
-    </p>
-    <p>
-      <label
-        for="shippingaddress"
-      >
-        Shipping Address :
-      </label>
-       
-      <span>
-        52, Enitan str, Aguda, Surulere, Lagos State
-      </span>
+      <span />
     </p>
   </div>
   <div
     class="old-order"
-    key="3"
   >
     <p>
       <label
-        for="orderno"
+        htmlFor="orderno"
       >
         Order No. :
       </label>
-      <span>
-        67
-      </span>
+      <span />
     </p>
     <p>
       <label
-        for="orderdate"
+        htmlFor="orderdate"
       >
         Order Date :
       </label>
       <span>
-        30 October, 2017
+        Invalid Date
       </span>
     </p>
     <p>
       <label
-        for="totalprice"
+        htmlFor="totalprice"
       >
         Total Amount :
       </label>
       <span>
         ₦
-        1500
       </span>
     </p>
     <p>
       <label
-        for="status"
+        htmlFor="status"
       >
         Status :
       </label>
        
-      <span>
-        Fulfilled
-      </span>
-    </p>
-    <p>
-      <label
-        for="shippingaddress"
-      >
-        Shipping Address :
-      </label>
-       
-      <span>
-        52, Enitan str, Aguda, Surulere, Lagos State
-      </span>
+      <span />
     </p>
   </div>
   <div
     class="old-order"
-    key="4"
   >
     <p>
       <label
-        for="orderno"
+        htmlFor="orderno"
       >
         Order No. :
       </label>
-      <span>
-        33
-      </span>
+      <span />
     </p>
     <p>
       <label
-        for="orderdate"
+        htmlFor="orderdate"
       >
         Order Date :
       </label>
       <span>
-        30 January, 2018
+        Invalid Date
       </span>
     </p>
     <p>
       <label
-        for="totalprice"
+        htmlFor="totalprice"
       >
         Total Amount :
       </label>
       <span>
         ₦
-        3000
       </span>
     </p>
     <p>
       <label
-        for="status"
+        htmlFor="status"
       >
         Status :
       </label>
        
-      <span>
-        Completed
-      </span>
-    </p>
-    <p>
-      <label
-        for="shippingaddress"
-      >
-        Shipping Address :
-      </label>
-       
-      <span>
-        52, Enitan str, Aguda, Surulere, Lagos State
-      </span>
+      <span />
     </p>
   </div>
 </div>

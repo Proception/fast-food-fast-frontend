@@ -33,7 +33,7 @@ export class Login extends Component {
           ...prevState.loginUser, [name]: value
         }
       }
-    }, () => console.log(this.state.loginUser)
+    }, () => {}
     )
   }
 

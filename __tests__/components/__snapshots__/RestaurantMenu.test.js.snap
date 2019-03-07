@@ -39,36 +39,62 @@ exports[`RestaurantMenu Component should match snapshot 1`] = `
         </a>
       </div>
     </div>
-    <FoodCards
-      menu={
-        Array [
+    <ul
+      className="list-group list-group-flush"
+    >
+      <FoodCards
+        item={
           Object {
             "id": 1,
             "imageUrl": "test-file-stub",
             "price": 500,
+            "quantity": 1,
             "title": "Boiled Yam",
-          },
+          }
+        }
+        key="1"
+        onClick={[Function]}
+      />
+      <FoodCards
+        item={
           Object {
             "id": 2,
             "imageUrl": "test-file-stub",
             "price": 900,
+            "quantity": 1,
             "title": "Rice",
-          },
+          }
+        }
+        key="2"
+        onClick={[Function]}
+      />
+      <FoodCards
+        item={
           Object {
             "id": 3,
             "imageUrl": "test-file-stub",
             "price": 500,
+            "quantity": 1,
             "title": "Fufu",
-          },
+          }
+        }
+        key="3"
+        onClick={[Function]}
+      />
+      <FoodCards
+        item={
           Object {
             "id": 4,
             "imageUrl": "test-file-stub",
             "price": 300,
+            "quantity": 1,
             "title": "Beans",
-          },
-        ]
-      }
-    />
+          }
+        }
+        key="4"
+        onClick={[Function]}
+      />
+    </ul>
   </div>
 </section>
 `;

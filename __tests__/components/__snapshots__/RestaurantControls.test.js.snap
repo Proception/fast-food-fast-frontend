@@ -2,16 +2,16 @@
 
 exports[`RestaurantControls Component should match snapshot 1`] = `
 <section
-  class="order"
+  className="order"
 >
   <div
-    class="container"
+    className="container"
   >
     <div
-      class="controls"
+      className="controls"
     >
       <div
-        class="search-box"
+        className="search-box"
       >
         <input
           name=""
@@ -20,17 +20,17 @@ exports[`RestaurantControls Component should match snapshot 1`] = `
         />
       </div>
       <div
-        class="search-button"
+        className="search-button"
       >
         <input
-          class="button"
+          className="button"
           name=""
           type="button"
           value="Search"
         />
       </div>
       <div
-        class="sort-controls"
+        className="sort-controls"
       >
         <select>
           <option

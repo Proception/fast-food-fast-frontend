@@ -1,46 +1,30 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import OrderHistoryCards from './OrderHistoryCards.jsx';
+import { getUserOrders } from '../actions/orderActions';
 
-export default class OrderHistory extends Component {
-  state = {
-    orders: [
-      {
-        "id": 1,
-        "orderNo": "12",
-        "price": 5000,
-        "orderDate": "30 August, 2016",
-        "orderStatus": "Pending",
-        "orderAddress": "52, Enitan str, Aguda, Surulere, Lagos State",
-      },
-      {
-        "id": 2,
-        "orderNo": "54",
-        "price": 1200,
-        "orderDate": "Boiled Yam",
-        "orderStatus": "In Progress",
-        "orderAddress": "52, Enitan str, Aguda, Surulere, Lagos State",
-      },
-      {
-        "id": 3,
-        "orderNo": "67",
-        "price": 1500,
-        "orderDate": "30 October, 2017",
-        "orderStatus": "Fulfilled",
-        "orderAddress": "52, Enitan str, Aguda, Surulere, Lagos State",
-      },
-      {
-        "id": 4,
-        "orderNo": "33",
-        "price": 3000,
-        "orderDate": "30 January, 2018",
-        "orderStatus": "Completed",
-        "orderAddress": "52, Enitan str, Aguda, Surulere, Lagos State",
-      },
-    ]
-  };
+export class OrderHistory extends Component {
+
+  componentDidMount(){
+    this.props.getUserOrders();
+  }
   generateOrders(){
-    const { orders } = this.state;
-    return <OrderHistoryCards orders={orders}/>
+
+    const { userOrders } = this.props.order;
+    userOrders.sort(function(a,b){
+      return new Date(b.order_date) - new Date(a.order_date);
+    });
+    if (!Array.isArray(userOrders) || !userOrders.length) {
+      return ( 
+        <div class="container">
+            <div class="old-order">
+              User has not made any Order Yet
+            </div>
+          </div> )
+    }else {
+      return <OrderHistoryCards userOrders={userOrders}/>
+    }
+    
   }
   render() {
     return (
@@ -60,3 +44,10 @@ export default class OrderHistory extends Component {
     )
   }
 }
+
+const mapStateToProps = state => ({
+  auth: state.auth,
+  order: state.order,
+});
+
+export default connect(mapStateToProps, { getUserOrders })(OrderHistory);

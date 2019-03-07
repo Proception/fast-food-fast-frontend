@@ -52,7 +52,8 @@ exports[`NavMenu Component should return auth menu 1`] = `
             aria-current="page"
             to="/checkout"
           >
-            Checkout
+            Checkout 
+             (2) 
           </NavLink>
         </li>
         <li>
@@ -79,11 +80,104 @@ exports[`NavMenu Component should return auth menu 1`] = `
               <NavLink
                 activeClassName="active"
                 aria-current="page"
-                to="/orders"
+                to="/orderhistory"
               >
-                View Pending Orders
+                View Order History
               </NavLink>
             </li>
+          </ul>
+        </li>
+        <li
+          className="on-login user"
+        >
+          <a>
+            <span>
+              Hi, 
+              User
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+`;
+
+exports[`NavMenu Component should return auth menu empty cart 1`] = `
+<header>
+  <div
+    className="container"
+  >
+    <NavLink
+      activeClassName="active"
+      aria-current="page"
+      to="/"
+    >
+      <div
+        id="brand-logo"
+      >
+        <h1>
+           
+          <span
+            className=""
+          >
+            Fast
+          </span>
+           Food Fast
+        </h1>
+      </div>
+    </NavLink>
+    <nav>
+      <ul
+        className="nav"
+      >
+        <li>
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            to="/"
+          >
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            to="/menu"
+          >
+            Menu
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            to="/checkout"
+          >
+            Checkout 
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            to="/logout"
+          >
+            Logout
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            to="#"
+          >
+            Settings
+          </NavLink>
+          <ul
+            className="dropdown"
+          >
             <li>
               <NavLink
                 activeClassName="active"
@@ -93,28 +187,142 @@ exports[`NavMenu Component should return auth menu 1`] = `
                 View Order History
               </NavLink>
             </li>
+            <div>
+              <li>
+                <NavLink
+                  activeClassName="active"
+                  aria-current="page"
+                  to="/orders"
+                >
+                  View Pending Orders
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  activeClassName="active"
+                  aria-current="page"
+                  to="/search"
+                >
+                  Search Food Items
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  activeClassName="active"
+                  aria-current="page"
+                  to="/addfooditems"
+                >
+                  Add Food Items
+                </NavLink>
+              </li>
+            </div>
+          </ul>
+        </li>
+        <li
+          className="on-login user"
+        >
+          <a>
+            <span>
+              Hi, 
+              User
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+`;
+
+exports[`NavMenu Component should return auth menu wrong token 1`] = `
+<header>
+  <div
+    className="container"
+  >
+    <NavLink
+      activeClassName="active"
+      aria-current="page"
+      to="/"
+    >
+      <div
+        id="brand-logo"
+      >
+        <h1>
+           
+          <span
+            className=""
+          >
+            Fast
+          </span>
+           Food Fast
+        </h1>
+      </div>
+    </NavLink>
+    <nav>
+      <ul
+        className="nav"
+      >
+        <li>
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            to="/"
+          >
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            to="/menu"
+          >
+            Menu
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            to="/checkout"
+          >
+            Checkout 
+             (2) 
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            to="/logout"
+          >
+            Logout
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            to="#"
+          >
+            Settings
+          </NavLink>
+          <ul
+            className="dropdown"
+          >
             <li>
               <NavLink
                 activeClassName="active"
                 aria-current="page"
-                to="/search"
+                to="/orderhistory"
               >
-                Search Food Items
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                activeClassName="active"
-                aria-current="page"
-                to="/addfooditems"
-              >
-                Add Food Items
+                View Order History
               </NavLink>
             </li>
           </ul>
         </li>
         <li
-          class="on-login user"
+          className="on-login user"
         >
           <a>
             <span>
@@ -194,7 +402,7 @@ exports[`NavMenu Component should return guest menu 1`] = `
           </NavLink>
         </li>
         <li
-          class="on-login user"
+          className="on-login user"
         >
           <a>
             <span>
