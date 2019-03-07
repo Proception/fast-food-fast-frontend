@@ -5,8 +5,7 @@ import thunk from 'redux-thunk';
 import configureStore from 'redux-mock-store';
 import {
   loginUser,
-} from "../../src/actions/authActions"
-import { userLogin } from '../../__mocks__/userMocks';
+} from '../../src/actions/authActions.js'
 import {
     addItemToCart,
     updateCartTotal,
@@ -19,7 +18,7 @@ import {
     makeOrder,
     getOrders,
     getUserOrders
-    } from '../../src/actions/orderActions';
+    } from '../../src/actions/orderActions.js';
 import {
     ADD_TO_CART,
     UPDATE_CART_TOTAL,
@@ -29,15 +28,11 @@ import {
     GET_USER_ORDERS,
     PREPARE_ORDER_REQUEST,
     COMPLETE_ORDER_REQUEST
-    } from '../../src/constants/action-types';
-import { basePath } from '../../src/utils/basePath';
-import {
-  badRequestResponse, conflictResponse,
-  noContentResponse, createdResponse,
-  unauthorizedResponse, okResponse
-} from '../../__mocks__/responseMocks';
-import { token } from '../../__mocks__/navMenuMocks';
-import mockLocalStorage from '../../__mocks__/mockLocalStorage';
+    } from '../../src/constants/action-types.js';
+import { basePath } from '../../src/utils/basePath.js';
+import { okResponse } from '../../__mocks__/responseMocks.js';
+import { token } from '../../__mocks__/navMenuMocks.js';
+import mockLocalStorage from '../../__mocks__/mockLocalStorage.js';
 
 const middlewares = [thunk]
 const mockStore = configureStore(middlewares)

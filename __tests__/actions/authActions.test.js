@@ -8,19 +8,19 @@ import {
   setToken,
   loginUser,
   signUpUser
-} from "../../src/actions/authActions"
+} from "../../src/actions/authActions.js"
 import {
   PREPARE_SIGNUP_REQUEST,
   COMPLETE_SIGNUP_REQUEST,
   SET_TOKEN
-} from "../../src/constants/action-types";
-import { basePath } from '../../src/utils/basePath';
-import { userSignUp, userLogin } from '../../__mocks__/userMocks';
+} from '../../src/constants/action-types.js';
+import { basePath } from '../../src/utils/basePath.js';
+import { userSignUp, userLogin } from '../../__mocks__/userMocks.js';
 import {
   badRequestResponse, conflictResponse,
   noContentResponse, createdResponse,
   unauthorizedResponse, okResponse
-} from '../../__mocks__/responseMocks';
+} from '../../__mocks__/responseMocks.js';
 
 
 const middlewares = [thunk]
