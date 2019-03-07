@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "test": "jest --u --coverage --colors --verbose ",
+    "test": "jest",
     "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls",
     "test:watch": "jest --watch",
     "start:dev": "webpack-dev-server --mode development ./src/index.js --config ./webpack.config.js --output ./dist/bundle.js --open",
@@ -70,7 +70,9 @@
     "webpack-dev-server": "^3.1.14"
   },
   "jest": {
-    "setupFilesAfterEnv": ["<rootDir>__tests__/setup/setupEnzyme.js"],
+    "setupFilesAfterEnv": [
+      "<rootDir>__tests__/setup/setupEnzyme.js"
+    ],
     "testPathIgnorePatterns": [
       "<rootDir>/__tests__/setup/"
     ],
