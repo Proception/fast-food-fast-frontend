@@ -33,12 +33,6 @@ export class OrderHistory extends Component {
           {
             this.generateOrders()
           }
-          <div class="pagination">
-            <a href="#" >&laquo;</a>
-            <a href="#" class="active">1</a>
-            <a href="#">2</a>
-            <a href="#">&raquo;</a>
-          </div>
         </section>
       </div>
     )

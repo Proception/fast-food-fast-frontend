@@ -10,8 +10,10 @@ exports[`Home Component should match snapshot 1`] = `
     <h1>
       Affordable meals, delivered very fast to your doorstep
     </h1>
-    <a
-      href="restaurantmenu.html"
+    <NavLink
+      activeClassName="active"
+      aria-current="page"
+      to="/menu"
     >
       <button
         className="button_1"
@@ -19,7 +21,7 @@ exports[`Home Component should match snapshot 1`] = `
       >
         Food Menu
       </button>
-    </a>
+    </NavLink>
   </div>
 </section>
 `;

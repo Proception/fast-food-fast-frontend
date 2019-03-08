@@ -27,31 +27,6 @@ exports[`OrderHistory Component should match snapshot 1`] = `
         ]
       }
     />
-    <div
-      class="pagination"
-    >
-      <a
-        href="#"
-      >
-        «
-      </a>
-      <a
-        class="active"
-        href="#"
-      >
-        1
-      </a>
-      <a
-        href="#"
-      >
-        2
-      </a>
-      <a
-        href="#"
-      >
-        »
-      </a>
-    </div>
   </section>
 </div>
 `;
@@ -69,31 +44,6 @@ exports[`OrderHistory Component should match snapshot 2`] = `
       >
         User has not made any Order Yet
       </div>
-    </div>
-    <div
-      class="pagination"
-    >
-      <a
-        href="#"
-      >
-        «
-      </a>
-      <a
-        class="active"
-        href="#"
-      >
-        1
-      </a>
-      <a
-        href="#"
-      >
-        2
-      </a>
-      <a
-        href="#"
-      >
-        »
-      </a>
     </div>
   </section>
 </div>
