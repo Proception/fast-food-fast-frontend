@@ -7,3 +7,6 @@
 <a href="https://codeclimate.com/github/Proception/fast-food-fast-frontend/maintainability"><img src="https://api.codeclimate.com/v1/badges/58ef1df2ab8c5260f061/maintainability" /></a>
 
 # fast-food-fast-frontend
+This is a fastfood delivery service that takes orders for food and delivers them to the user.
+
+<a href="https://fast-food-app-frontend.herokuapp.com/">Click Here</a> to view application live
