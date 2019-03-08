@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { addItemToCart, updateCartTotal } from '../actions/orderActions';
+import Notify from '../utils/Notify';
 import FoodCards from './FoodCards.jsx'
 import yam from '../assets/images/yam.jpg';
 import rice from '../assets/images/rice.jpg';
@@ -42,9 +43,16 @@ export class RestaurantMenu extends Component {
   };
 
   handleClick = (e, data) => {
-    const { addItemToCart, updateCartTotal } = this.props;
-    addItemToCart(data);
-    updateCartTotal();
+    const { user } = this.props.auth;
+    if(user){
+      const { addItemToCart, updateCartTotal } = this.props;
+      addItemToCart(data);
+      updateCartTotal();
+    }
+
+    if(!user){
+      Notify.notifyError('You need to be logged in to perform that action');
+    }
   }
 
   generateMenu(){
@@ -63,14 +71,7 @@ export class RestaurantMenu extends Component {
         <div className="container">
         <div className="header">
             <h3>Core Dishes</h3>
-            <div className="pagination">
-              <a href="#" >&laquo;</a>
-              <a href="#" className="active">1</a>
-              <a href="#">2</a>
-              <a href="#">&raquo;</a>
-            </div>
           </div>
-
           {
             this.generateMenu()
           }

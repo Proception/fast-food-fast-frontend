@@ -13,31 +13,6 @@ exports[`RestaurantMenu Component should match snapshot 1`] = `
       <h3>
         Core Dishes
       </h3>
-      <div
-        className="pagination"
-      >
-        <a
-          href="#"
-        >
-          «
-        </a>
-        <a
-          className="active"
-          href="#"
-        >
-          1
-        </a>
-        <a
-          href="#"
-        >
-          2
-        </a>
-        <a
-          href="#"
-        >
-          »
-        </a>
-      </div>
     </div>
     <ul
       className="list-group list-group-flush"
